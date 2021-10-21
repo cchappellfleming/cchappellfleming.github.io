@@ -1,43 +1,51 @@
-<!DOCTYPE work.html>
+<html>
 <head>
+<!--refernce external style sheet-->
 <link rel="stylesheet" href="style.css">
+<!-- font pairing sourced from https://www.w3schools.com/css/css_font_pairings.asp-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
 </head>
 
-<body>
-<!Horizontal Nav Bar with refernce from w3Schools nav bar tutorial, Home, Work Experince, Education, Software & Certificates>
-
+<!--Define header and Nav Bar Text-->
 <header>
-  <h1>Colin Chappell</h1>
-  <h3>	BComm (Hons) in Infromation Systems, GIS Application Specailist</h3>
+  	<h1>Colin Chappell</h1>
+	<h5>BComm (Hons) in Infromation Systems, GIS Application Specailist</h5>
+	<!-- Intial nav bar formatting referenced from https://www.w3schools.com/css/css_navbar_horizontal.asp*/-->
+	<nav>
+		<ul>
+			<li><a href="index.html">About</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a class="active" href="work.html">Work Experince</a></li>
+		</ul>
+	</nav>
 </header>
-<!
-<ul>
-  <1i><a href="/index/">Home</a></1i>
-  <1i><a class="active" href="education.asp">Education</a></1i>
-  <1i><a href="work.asp">Work Experince</a></1i>
-</ul> >
 
-<h1>Work Experince</h1>
-
- <script src="https://maps.googleapis.com/maps/api/staticmap?center=Apsley%2COntario&zoom=7&size=600x300&maptype=hybrid&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CSir+Fleming+College+Lindsay+ON&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CCarleton+University+Ottawa+ON&markers=anchor:centre%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CSir+William+Mulock+Newmarket+ON&markers=anchor:centre%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CCrossland+Newmarket+ON&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA">
- </script>
-
-<! Use formatting to differentiate lcation/dates>
+<body>
+<!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+<!--Icons retrieved from http://kml4earth.appspot.com/icons.html-->
+<!--Define map class, provide source and alt text-->
+<img class="mainmap" src="https://maps.googleapis.com/maps/api/staticmap?center=Apsley%2COntario&zoom=7&size=600x300&maptype=hybrid
+&markers=anchor:centre%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CTown+of+Aurora+Aurora+ON
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CCarleton+University+Ottawa+ON
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C18182+Yonge+St+Newmarket+ON
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C17760+Yonge+St+Newmarket+ON
+&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Work Map">
+<!--Page title-->
+<h2>Work Experince</h2>
+<!-- definition and use of article tag from https://www.w3schools.com/tags/tag_article.asp-->
 <article>
-<h2>Town of Aurora Aurora, ON</h2>
-<h3>Special Events Program Assistant, January 2020 to September 2021</h3>
-<p> Content for SE Work...</p>
-</article>
-
-<article>
-<h3>Camp Supervisor, May 2017 to September 2019</h3>
+ <!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+ <!--Define map class, provide source and alt text-->
+<img class="submap" src="https://maps.googleapis.com/maps/api/staticmap?center=Aurora%2CON&zoom=11&size=200x200&maptype=hybrid
+&markers=anchor:centre%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CTown+of+Aurora+Aurora+ON&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Town of Aurora">
+<!--Personal Text, Groupped using h3, h4 and p-->
+<h3>Town of Aurora - Aurora, ON</h3>
+<h4>Special Events Program Assistant, <italic>January 2020 to September 2021</h4>
+<h4>Camp Supervisor, <i>May 2017 to September 2019</i></h4>
 <p>Enhancing professionalism and communication skills while mentoring staff and peers in a team environment.</p>
 <p>Prepared and delivered on essential materials including training, scheduling, and budget compliance.</p>
 <p>Demonstrated conflict resolution and risk management skills while ensuring a safe workplace for staff, service providers, and customers.</p>
-</article>
-
-<article>
-<h3>Camp Director, Assistant Director, Camp Counsellor, Program Leader, June 2012 to September 2016</h3>
+<h4>Camp Director, Camp Assistant Director, Camp Counsellor, Program Leader, June 2012 to September 2016</h4>
 <p>Demonstrated teamwork while evaluating and mentoring staff.</p>
 <p>Acquired time management skills while leading and mentoring both staff and volunteers.</p>
 <p>Completing administrative tasks and implementing a daily schedule each week.</p>
@@ -46,24 +54,41 @@
 </article>
 
 <article>
-<h2>Carleton University Ottawa, ON</h2>
-<h3>Teaching Assistant, September 2018 to December 2018</h3>
+ <!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+ <!--Define map class, provide source and alt text-->
+<img class="submap" src="https://maps.googleapis.com/maps/api/staticmap?center=Ottawa%2CON&zoom=10&size=200x200&maptype=hybrid
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CCarleton+University+Ottawa+ON&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Carleton">
+<!--Personal Text, Groupped using h3, h4 and p-->
+<h3>Carleton University - Ottawa, ON</h3>
+<h4>Teaching Assistant, September 2018 to December 2018</h4>
 <p>Teaching Assistant for two classes; Project Management and Business Application Development. </p>
 <p>As a student and Teaching Assistant, I advanced my knowledge of business processes while mentoring students in these two subject areas.</p>
 </article>
 
 <article>
-<h2>Costco Wholesale East Gwillimbury, ON</h2>	
-<h3>Food Service Assistant, Food Court, September2013 to June 2014</h3>
+ <!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+ <!--Define map class, provide source and alt text-->
+<img class="submap" src="https://maps.googleapis.com/maps/api/staticmap?center=Newmarket%2CON&zoom=10&size=200x200&maptype=hybrid
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C18182+Yonge+St+Newmarket+ON&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Costco">
+<!--Personal Text, Groupped using h3, h4 and p-->
+<h3>Costco Wholesale - East Gwillimbury, ON</h3>	
+<h4>Food Service Assistant, Food Court, September2013 to June 2014</h4>
 <p>Responsible for preparing and serving a variety of food items to customers, developing time management skills.</p>
 <p>Gained valuable customer service skills while taking orders and collecting money from customers following department cash handling procedures.</p>
 <p>Demonstrated initiative by meeting department standards and working effectively with coworkers.</p>
 </article>
 
 <article>
-<h2>McDonalds Newmarket, ON</h2>	      	        
-<h3>Crew Member, September 2013 to February 2014</h3>
+ <!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+ <!--Define map class, provide source and alt text-->
+<img class="submap" src="https://maps.googleapis.com/maps/api/staticmap?center=Newmarket%2CON&zoom=10&size=200x200&maptype=hybrid
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C17760+Yonge+St+Newmarket+ON&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="McDonalds">
+<!--Personal Text, Groupped using h3, h4 and p-->
+<h3>McDonalds - Newmarket, ON</h3>	      	        
+<h4>Crew Member, September 2013 to February 2014</h4>
 <p>Established the ability to work in high-stress environments effectively, alongside managers and team members.</p>
 <p>Displayed responsibility while handling money on a regular basis.</p>
 </article>
+
 </body>
+</html>

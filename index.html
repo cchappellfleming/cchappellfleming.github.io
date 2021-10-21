@@ -1,22 +1,41 @@
-<!DOCTYPE index.html>
+<html>
 <head>
-<link rel="stylesheet" type = "text/css" href="style.css">
+<!--refernce external style sheet-->
+<link href="style.css" rel="stylesheet" type = "text/css" >
+<!-- font pairing sourced from https://www.w3schools.com/css/css_font_pairings.asp-->
+<link href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" rel="stylesheet">
 </head>
 
 <header>
-  <h1>Colin Chappell</h1>
-  <h3>	BComm (Hons) in Infromation Systems, GIS Application Specailist</h3>
+  	<h1>Colin Chappell</h1>
+	<h5>BComm (Hons) in Infromation Systems, GIS Application Specailist</h3>
+	<!-- Intial nav bar formatting referenced from https://www.w3schools.com/css/css_navbar_horizontal.asp*/-->
+	<nav>
+		<ul>
+			<li><a class="active" href="index.html">About</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="work.html">Work Experince</a></li>
+		</ul>
+	</nav>
 </header>
-
-<ul>
-  <1i><a href="/index/">Home</a></1i>
-  <1i><a class="active" href="education.asp">Education</a></1i>
-  <1i><a href="work.asp">Work Experince</a></1i>
-</ul> 
 <body>
-  
-<!Static Map of southern ontario with all pins?>
-
-
-
+<article>
+<!--Page title-->
+<h2>About Me</h2>
+<!--Personal Text, Groupped using h4, and about class in CSS-->
+<!--Define map class, provide source and alt text-->
+<h4 class="about"> I am currently pursuing a Geographic Information Systems Post Graduate Certificate from Fleming College. I am continually seeking new avenues which will provide challenging opportunities and build upon my prior work and education experiences. My time within the government administration industry has allowed me to develop the essential soft skills required to be successful.  As a driven business graduate of Carleton University, I have become a quick and adaptive learner from continuous exposure to new software and methodologies throughout my time as a professional. </h4>
+ <!--Insert Static Map, Satic map refernces Google Map Static API Overview-->
+ <!--Icons retrieved from http://kml4earth.appspot.com/icons.html-->
+ <!--Define map class, provide source and alt text-->
+<img class="mainmap" src="https://maps.googleapis.com/maps/api/staticmap?center=Apsley%2COntario&zoom=7&size=600x300&maptype=hybrid
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CSir%20Fleming%20College%20Lindsay+ON
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CCarleton%20University%20Ottawa+ON
+&markers=anchor:centre%7Cicon:http://maps.google.com/mapfiles/kml/pal3/icon31.png%7CSir%20William%20Mulock%20Newmarket+ON
+&&markers=anchor:left%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CTown+of+Aurora+Aurora+ON
+&markers=anchor:left%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7CCarleton+University+Ottawa+ON
+&markers=anchor:top%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C18182+Yonge+St+Newmarket+ON
+&markers=anchor:right%7Cicon:http://maps.google.com/mapfiles/kml/pal2/icon58.png%7C17760+Yonge+St+Newmarket+ON
+&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt ="All">
 </body>
+</html>

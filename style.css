@@ -1,47 +1,139 @@
-body {
-  font-size: 28px;
-  background-color: grey;
+/*Set properties for header*/
+header{
+	background: white;
+	text-align: center;
 }
-h1{
+
+/* Intial nav bar formatting referenced from https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	text-align: center;
+}
+
+/*Case transform referenced from https://www.w3schools.com/cssref/pr_text_text-transform.asp*/
+nav li{
+	display: inline-block;
+	padding: 14px 16px;
+	text-transform: uppercase;
+}
+
+/*Style for nav bar elements*/
+nav a{
+	font-family: Oswald, sans-serif;
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
 	
 }
-h2{
-	
-}
-h3{
-	
-}
-h4{
-	
+
+/*Hover action referenced from https://www.w3schools.com/cssref/sel_hover.asp*/
+nav a:hover {
+	transition: all ease-in-out 500ms;
+	background-color: white;
+	color: black;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
+/*modify colour and text decoration of active tab*/
 .active {
-  background-color: #4CAF50;
+	background-color:#778899;
+	color: white;
+	text-decoration: underline;	
 }
+
+/*set colour, margin and padding of body*/
+body{
+	background-color: #778899;
+	margin: 0;
+	padding: 0;
+}
+
+/*Set properies for article to hold text*/
+article{
+	margin: 14px 16px;
+	padding: 15px;
+}
+
+/*shared style for static maps*/
+img{
+	border: 5px solid black;
+	display: inline-block;
+	margin: 14px 16px;
+}
+
+/*Map formatting referenced from https://www.w3schools.com/css/css3_images.asp*/
+/*Class defined for larger maps*/
+.mainmap{
+	border-radius: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Map formatting referenced from https://www.w3schools.com/css/css3_images.asp*/
+/*Class defined for smaller maps*/
+.submap{
+	border: 2px solid black;
+	border-radius: 60%;
+	margin-top: auto;
+	margin-bottom: auto;
+	float: left;
+}
+
+/*Set style for each selector*/
+/*Set style for h1, reduce spacing in between text in header*/
+h1{
+	font-family: Oswald, sans-serif;
+	font-size: 46px;
+	padding: 0px;
+	margin-block-end: 0px;
+}
+
+/*Set style for h2*/
+h2{
+	font-family: Oswald, sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Set style for h3*/
+h3{
+	font-family: Oswald, sans-serif;
+	font-size: 34px;
+	margin-inline-start: 10px;
+}
+
+/*Set style for h4, font style to italic*/
+h4{
+	font-family: Oswald, sans-serif;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: normal;
+	margin-inline-start: 250px;
+}
+/*Set style for about class, allignment*/
+.about{
+	margin-left: 40px;
+	margin-right: 40px;	
+	text-align: center;
+}
+
+/*Set style for h5, reduce spacing in between text in header*/
+h5{
+	font-family: Oswald, sans-serif;
+	font-size: 46px;
+	font-style: italic;
+	font-weight: normal;
+	margin-block-start: 10px;
+	margin-block-end: 20px;
+}
+
+/*Set style for p, indent on page*/
+p{
+	font-family: "Noto Sans", sans-serif;
+	font-size: 16px;
+	margin-inline-start: 300px;
+}
+
